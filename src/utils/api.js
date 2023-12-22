@@ -8,7 +8,7 @@ export const getDistance = () => {
   const origins =
     'Croydon, UK | New Marston, UK | Elsfield Way, Oxford OX2 8NP, United Kingdom';
   const destination = 'Southcombe OX7 5QH, United Kingdom';
-  const apiKey = 'AIzaSyCgu5LWw8nh3w7txYsfEQr2lfa9hxoFGtg';
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
 
   return api
     .get(

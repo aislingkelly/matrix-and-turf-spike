@@ -10,7 +10,7 @@ const VoronoiMap = () => {
     // Generate random points
     const points = turf.randomPoint(10, { bbox: [-180, -85, 180, 85] });
 
-    // Generate Voronoi diagram
+    // Generate voronoi diagram
     const voronoi = turf.voronoi(points, { bbox: [-180, -85, 180, 85] });
     setVoronoiPolygons(voronoi);
   }, []);
